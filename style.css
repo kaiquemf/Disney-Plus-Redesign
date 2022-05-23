@@ -44,3 +44,89 @@ main{
   width: 40rem; height: 13rem;
   font-size: 2rem; line-height: 3.2rem; font-weight: 400;
 }
+.button-watch{
+  align-items: center; display: flex;
+}
+.selected-movie-container button{
+  display: flex; align-items: center; justify-content: right; gap: 2rem;
+  width: 25rem; height: 7rem; border-radius: 9999px;
+  font-size: 2rem; line-height: 2.4rem; font-weight: 500; color: var(--clr-main);
+  border: none; background: linear-gradient(154.23deg, #0F3A7B -58.45%, #0CFFFF 374.49%); filter: drop-shadow(0px 3px 50px rgba(0, 0, 0, 0.160784));
+  transition: 300ms ease-in-out;
+}
+.selected-movie-container button .play-icon{
+  animation: go-for 1000ms forwards;
+}
+.selected-movie-container button:hover .play-icon{
+  animation: go-back 1000ms forwards;
+}
+.selected-movie-container button .watch{
+  animation: text-for 1000ms forwards;
+}
+.selected-movie-container button:hover .watch{
+  animation: text-back 1000ms forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Play Button Animation */
+@keyframes go-back{
+  0%{
+    transform: translateX(0rem);
+  }
+  100%{
+    transform: translateX(-6rem);
+  }
+}
+@keyframes go-for{
+  0%{
+    transform: translateX(-6rem);
+  }
+  100%{
+    transform: translateX(1rem);
+  }
+}
+/* Name Animation */
+@keyframes text-back{
+  0%{
+    transform: translateX(-12rem);
+    opacity: 0;
+  }
+  25%{
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(-6rem);
+    opacity: 1;
+  }
+}
+@keyframes text-for{
+  0%{
+    transform: translateX(-6rem);
+    opacity: 1;
+  }
+  25%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(-12rem);
+    opacity: 0;
+  }
+}
