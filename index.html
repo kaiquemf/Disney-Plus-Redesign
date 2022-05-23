@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Link Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Disney+ | Dev Design</title>
 </head>
 <body>
-  
+ <div class="app-content">
+  <nav>
+   <img class="logo" src="/images/disneyLogo.png" alt="Disney plus logo">
+   <button class="menu-btn"><img src="/images/hamburguerMenu.png" alt="Menu with three horizontal lines"></button>
+  </nav>
+  <main>
+   <section class="selected-movie-container">
+    <section class="imdb-rating-content">
+     <img src="/images/IMDB-icon.png" alt="iMDB icon">
+     <div class="average-rating"><span>8.8</span></div>
+    </section>
+    <section class="category-content">
+     <div class="release-year"><span>2021 -</span></div>
+     <div class="category-title"><span>&ThinSpace; Kids -</span></div>
+     <div class="type"><span>&ThinSpace; Movie</span></div>
+    </section>
+    <section  class="sumary-content">
+      <img class="sumary-logo" src="/images/filmLogo.png" alt="Logo filme LUCA">
+      <div class="sumary-text">
+        Luca and Alberto dream of a life of freedom, a life of adventure — and, most of all, a life with a Vespa to ride.
+      </div>
+    </section>
+    <button>
+      <img src="/images/playIconBtn.png" alt="">
+    </button>
+   </section>
+  </main>
+ </div>
 </body>
 </html>
