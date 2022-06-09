@@ -29,6 +29,13 @@ main{
   display: flex; flex-direction: column; align-self: center;
   font-family: var(--ff-main); color: var(--clr-main); font-size: 2rem; line-height: 2.4rem;
 }
+.imdb-rating{
+  transition: all 100ms ease-in-out;
+}
+.imdb-rating:hover{
+  transform: scale(1.02);
+
+}
 .imdb-rating-content{
   display: flex; align-items: center; gap: 1rem;
    font-weight: 500;
